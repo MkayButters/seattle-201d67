@@ -53,11 +53,13 @@ Test this function by hand in the console to get it working, and when you think 
 
 // Write your code here
 function sumAndMultiply(a, b, c) { //eslint-disable-line
-    var a = [4, 7 , 5];
-    var b = [4,7,5];
-    var c
 
-    
+    var arr1 = sum(a , b)[0] 
+    var sumarr = sum(arr1 , c)[0]
+    var arr2 = multiply(a , b)[0]
+    var prodarr = multiply(arr2 , c)[0]
+    console.log(sumarr , prodarr , a + " and " + b + " and " + c +  " sum to " + sumarr + '.' , 'The product of '+ a + ' and ' + b + ' and '+ c + ' is ' + prodarr + '.')
+    return [sumarr , prodarr , a + " and " + b + " and " + c +  " sum to " + sumarr + '.' , 'The product of '+ a + ' and ' + b + ' and '+ c + ' is ' + prodarr + '.']
 
 }
 
